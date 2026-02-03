@@ -114,14 +114,16 @@ Purpose: Used during postfix evaluation to store operands and intermediate resul
   4. Final result: Top of stack
 
 ## Main Method Organization
+
 The `main()` function is structured as:
+
 1. Test Cases: Demonstrates conversion and evaluation with 5 examples:
    - `3+4*2` → `342*+` → Result: 11
    - `(3+4)*2` → `34+2*` → Result: 14
    - `2^3^2` → `232^^` → Result: 512
    - `5+((1+2)*4)-3` → `512+4*+3-` → Result: 14
    - `a+b*c-d` → `abc*+d-` → (Variable expression, no evaluation)
-5. Smart Evaluation: Only evaluates expressions with numeric values
+2. Smart Evaluation: Only evaluates expressions with numeric values
 
 ## Sample Output
 
